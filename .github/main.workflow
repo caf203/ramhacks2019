@@ -15,7 +15,7 @@ action "set project" {
   secrets = ["GCLOUD_AUTH", "GITHUB_TOKEN"]
 }
 
-action "transfer" {
+action "scp" {
   uses = "actions/gcloud/cli@6a43f01e0e930f639b90eec0670e88ba3ec4aba3"
   needs = ["set project"]
   secrets = ["GCLOUD_AUTH", "GITHUB_TOKEN"]
