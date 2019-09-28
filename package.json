@@ -1,0 +1,24 @@
+{
+  "name": "realestatebackend",
+  "version": "1.0.0",
+  "description": "The backend that powers the real estate game for RamHacks 2019",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caf203/ramhacks2019.git"
+  },
+  "author": "Curtis Fowler",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/caf203/ramhacks2019/issues"
+  },
+  "homepage": "https://github.com/caf203/ramhacks2019#readme",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.2"
+  }
+}
