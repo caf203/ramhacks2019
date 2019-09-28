@@ -17,5 +17,9 @@ module.exports = {
         const doc = await realEstateCollection.findOne({'RecordID_Int': 1})
         console.log(doc)
         return doc
+    },
+    async getAllDocuments() {
+        const doc = await realEstateCollection.find({})
+        return doc.toArray()
     }
 }
