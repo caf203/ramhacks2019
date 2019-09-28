@@ -3,7 +3,12 @@ workflow "New workflow" {
   resolves = ["scp"]
 }
 
-action "setup auth" {
+action "Setup Google Cloud Authentication" {
+  uses = "actions/gcloud/auth@master"
+  secrets = ["GCLOUD_AUTH"]
+}
+
+action "set project" {
   uses = "actions/gcloud/cli@6a43f01e0e930f639b90eec0670e88ba3ec4aba3"
   runs = "gcloud config set project ramhacks"
   secrets = ["GCLOUD_AUTH", "GITHUB_TOKEN"]
