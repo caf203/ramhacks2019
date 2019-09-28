@@ -19,5 +19,5 @@ action "transfer" {
   uses = "actions/gcloud/cli@6a43f01e0e930f639b90eec0670e88ba3ec4aba3"
   needs = ["set project"]
   secrets = ["GCLOUD_AUTH", "GITHUB_TOKEN"]
-  runs = "gcloud compute ssh realestategame --command \"cd /home/caf203/ramhacks2019; git pull\" --zone us-central1-a"
+  runs = "gcloud compute ssh realestategame --zone us-central1-a --command 'cd /home/caf203/ramhacks2019; git pull'"
 }
